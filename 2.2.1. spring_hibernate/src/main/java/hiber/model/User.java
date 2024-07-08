@@ -24,13 +24,6 @@ public class User {
    @JoinColumn(name = "cars_id")
    private Car car;
 
-   public void setCar(Car car) {
-      this.car = car;
-   }
-
-   public Car getCar() {
-      return car;
-   }
 
    public User() {
 
@@ -63,6 +56,13 @@ public class User {
       this.id = id;
    }public Long getId() {
       return id;
+   }
+   public void setCar(Car car) {
+      this.car = car;
+   }
+
+   public Car getCar() {
+      return car;
    }
 
 }
